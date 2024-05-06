@@ -4,7 +4,7 @@ const contadores = document.querySelectorAll(".contador");
 
 const tempoObjetivo1 = new Date("2024-12-10T00:00:00");
 const tempoObjetivo2 = new Date("2024-05-26T00:00:00");
-const tempoObjetivo3 = new Date("2024-06-26T00:00:00");
+const tempoObjetivo3 = new Date("2027-06-26T00:00:00");
 const tempoObjetivo4 = new Date("2024-07-26T00:00:00");
 
 const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
@@ -57,5 +57,21 @@ function comecaCronometro(){
 }
 
 comecaCronometro();
+
+function atualizarData() {
+    // Obter a nova data inserida pelo usuário
+    const novaDataInput = document.getElementById("nova-data");
+    const novaData = new Date(novaDataInput.value);
+
+    // Atualizar os tempos dos objetivos
+    tempos[0] = novaData;
+    tempos[1] = novaData;
+    tempos[2] = novaData;
+    tempos[3] = novaData;
+
+    // Atualizar os contadores
+    atualizaCronometro();
+}
+
 
 

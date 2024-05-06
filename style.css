@@ -110,6 +110,40 @@ body{
     margin: 0;
 }
 
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 1em auto;
+}
+
+.input-nova-data {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.botao-atualizar {
+    padding: 8px 16px;
+    font-size: 20px;
+    background-color: var(--verde);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.botao-atualizar:hover {
+    background-color: #4caf50; /* um tom mais escuro de verde ao passar o mouse */
+}
+
 
  
 @media screen and (min-width: 768px) {
